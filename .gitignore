@@ -40,11 +40,13 @@ yarn-error.log*
 
 #python junk
 /api/__pycache__/
+/api/__pycache__/*
 /api/.pytest_cache/
 /api/.mypy_cache/
 /api/.coverage
 /api/.pytest_cache
 /api/.mypy_cache
+*.pyc
 
 # vercel
 .vercel

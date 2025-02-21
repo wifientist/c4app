@@ -26,4 +26,16 @@ async def read_root_no_slash():
 async def read_blog():
     return {"message": "Welcome to the blog!"}
 
+@api_router.get("/blog/{id}")
+async def read_blog_id(id: int):
+    return {"message": f"this would be blog post {id}!"}
+
+@api_router.get("/video")
+async def read_video():
+    return {"message": "Here's all the videos!"}
+
+@api_router.get("/video/{id}")
+async def read_video_id(id: int):
+    return {"message": f"this would be video {id}!"}
+
 app.include_router(api_router)
