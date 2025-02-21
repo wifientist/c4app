@@ -29,8 +29,8 @@ const BlogPage = () => {
           <small>{post.date}</small>
           <p>{post.excerpt}</p>
           {/* Link to a detailed post page (assumes you have dynamic routing set up) */}
-          <Link href={`/blog/${post.slug}`}>
-            <a>Read more</a>
+          <Link legacyBehavior href={`/blog/${post.slug}`}>
+            <p>Read more</p>
           </Link>
         </div>
       ))}
