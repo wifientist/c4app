@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-900 py-4 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-center">
-        <div className="flex space-x-8 text-lg font-semibold text-gray-300">
+        <div className="flex space-x-4 sm:space-x-8 sm:text-lg text-sm sm:font-semibold text-gray-300">
           <Link href="/dashboard" className="hover:text-white transition">Dashboard</Link>
           <Link href="/blog" className="hover:text-white transition">Blog</Link>
           <Link href="/videos" className="hover:text-white transition">Videos</Link>

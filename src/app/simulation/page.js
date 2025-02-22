@@ -11,7 +11,7 @@ const Line = dynamic(() => import("react-chartjs-2").then((mod) => mod.Line), { 
 export default function SimulationPage() {
   const [chartData, setChartData] = useState(null);
   const [balance, setBalance] = useState(10000);
-  const [btcPrice, setBtcPrice] = useState(95000);
+  const [btcPrice, setBtcPrice] = useState(97000);
   const [holdings, setHoldings] = useState(0);
   const [floatingElements, setFloatingElements] = useState([]);
 
@@ -21,7 +21,7 @@ export default function SimulationPage() {
       datasets: [
         {
           label: "Bitcoin Price",
-          data: [48000, 49000, 50000, 52000, 53000],
+          data: [89000, 93000, 95000, 90000, 97000],
           borderColor: "#ffcc00",
           backgroundColor: "rgba(255, 204, 0, 0.2)",
           borderWidth: 2,
