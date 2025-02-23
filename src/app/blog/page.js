@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import SignupForm from "@/components/SignupForm";
 
 export default function BlogPage() {
   const [floatingElements, setFloatingElements] = useState([]);
@@ -76,6 +77,7 @@ export default function BlogPage() {
           </motion.div>
         ))}
       </div>
+      <SignupForm />
     </div>
   );
 }

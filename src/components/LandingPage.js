@@ -17,7 +17,7 @@ export default function LandingPage() {
       labels: ["1D", "1W", "1M", "3M", "1Y"],
       datasets: [
         {
-          label: "Bitcoin Learning Index",
+          label: "Crypto Learning Index",
           data: [50, 65, 80, 75, 95],
           borderColor: "#ffffff",
           backgroundColor: "rgba(255, 255, 255, 0.2)",

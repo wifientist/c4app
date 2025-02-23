@@ -5,20 +5,21 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import "chart.js/auto";
+import SignupForm from "@/components/SignupForm";
 
 const Line = dynamic(() => import("react-chartjs-2").then((mod) => mod.Line), { ssr: false });
 
 export default function DashboardPage() {
   const [floatingElements, setFloatingElements] = useState([]);
   const fakeLeaderboard = [
-    { name: "Alice", score: 1200, target: "🚀" },
-    { name: "Bob", score: 1150, target: "🎯" },
-    { name: "Charlie", score: 1100, target: "🔥" },
+    { name: "David", score: 1200, target: "🚀" },
+    { name: "Eve", score: 1150, target: "🎯" },
+    { name: "Frank", score: 1100, target: "🔥" },
   ];
   const tradingLeaderboard = [
-    { name: "David", profit: "$12,500" },
-    { name: "Eve", profit: "$10,300" },
-    { name: "Frank", profit: "$9,700" },
+    { name: "🥇 Alice", profit: "$12,500" },
+    { name: "🥈 Bob", profit: "$11,300" },
+    { name: "🥉 Charlie", profit: "$10,700" },
   ];
 
   const [chartData, setChartData] = useState(null);
@@ -127,6 +128,7 @@ export default function DashboardPage() {
           </motion.div>
         ))}
       </div>
+      <SignupForm />
     </div>
   );
 }

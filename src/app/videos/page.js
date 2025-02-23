@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import SignupForm from "@/components/SignupForm";
 
 export default function VideosPage() {
   const [floatingElements, setFloatingElements] = useState([]);
@@ -75,6 +76,7 @@ export default function VideosPage() {
           </motion.div>
         ))}
       </div>
+      <SignupForm />
     </div>
   );
 }
